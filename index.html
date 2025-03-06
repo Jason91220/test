@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Compétition Youtube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Ajout de Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+   
+
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Header qui suit le défilement -->
+    <header
+      class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-sm z-[9999] px-4 py-2 flex items-center shadow-lg transition-all duration-300"
+    >
+      <!-- Logo -->
+      <div class="flex items-center w-1/4">
+        <a href="#accueil" class="transition-transform duration-300 hover:scale-110">
+          <img
+            src="img/USArts_Blanc.png"
+            alt="USArts Logo"
+            class="w-12 h-12 object-contain"
+            style="width: 3rem; height: 3rem"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation desktop -->
+      <nav class="hidden lg:flex w-2/4 justify-center">
+        <ul class="flex space-x-6 items-center">
+          <li>
+            <a
+              href="#about"
+              class="text-white hover:text-cyan-glow transition-colors duration-300 text-base font-medium"
+              >À Propos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#video"
+              class="text-white hover:text-cyan-glow transition-colors duration-300 text-base font-medium"
+              >Vidéo</a
+            >
+          </li>
+          <li>
+            <a
+              href="#shorts"
+              class="text-white hover:text-cyan-glow transition-colors duration-300 text-base font-medium"
+              >Shorts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@USArtsofficial"
+              target="_blank"
+              class="px-3 py-1.5 bg-cyan-glow border border-cyan-glow text-white hover:bg-cyan-glow hover:text-white transition-all duration-300 rounded-md text-sm btn-glow-blue"
+              >Rejoignez-nous</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Burger Menu Button -->
+      <div class="lg:hidden ml-auto">
+        <div class="burger-icon" id="burgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="menu-mobile flex items-center justify-center">
+        <nav class="text-center">
+          <ul class="space-y-8">
+            <li>
+              <a
+                href="#about"
+                class="text-white hover:text-cyan-glow transition-colors duration-300 text-2xl font-medium"
+                >À Propos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#video"
+                class="text-white hover:text-cyan-glow transition-colors duration-300 text-2xl font-medium"
+                >Vidéo</a
+              >
+            </li>
+            <li>
+              <a
+                href="#shorts"
+                class="text-white hover:text-cyan-glow transition-colors duration-300 text-2xl font-medium"
+                >Shorts</a
+              >
+            </li>
+            <li class="pt-4">
+              <a
+                href="https://www.youtube.com/@USArtsofficial"
+                target="_blank"
+                class="inline-block px-6 py-3 bg-cyan-glow border-2 border-cyan-glow text-white hover:bg-cyan-glow hover:text-white transition-all duration-300 rounded-md text-xl font-medium btn-glow-blue"
+                >Rejoignez-nous</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Espace vide pour équilibrer le header sur desktop -->
+      <div class="hidden lg:block w-1/4"></div>
+    </header>
+
+    <!-- Contenu principal avec effet parallaxe -->
+    <main class="relative w-full">
+      <div class="wrapper">
+        <div id="accueil" class="parallax__group hero-container">
+          <div class="parallax__layer sky"></div>
+          <div class="parallax__layer bushes"></div>
+          <div class="parallax__layer water"></div>
+          <div class="parallax__layer people1"></div>
+          <div class="parallax__layer people2"></div>
+          <div class="parallax__layer people3"></div>
+
+          <div class="parallax__layer hero-text">
+            <div class="year-container flex flex-col items-center justify-center min-h-screen px-4 text-center">
+              <h1 class="centered-title text-white text-shadow-glow mb-4 text-3xl md:text-4xl lg:text-5xl font-extrabold">
+                USArts
+              </h1>
+              <p class="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto font-bold text-shadow-glow">
+                Explorez la scene, l'experience commence ici
+              </p>
+              <a
+                href="#video"
+                class="inline-block px-6 py-3 bg-custom-red border-2 border-custom-red text-white hover:bg-custom-red hover:text-white transition-all duration-300 rounded-md text-base font-medium btn-glow-red"
+                >Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="about" class="parallax__group">
+          <!-- Section About Us avec Tailwind CSS -->
+          <div class="py-16 px-4 bg-black min-h-screen flex flex-col justify-center relative z-10">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+              <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white text-shadow-glow">
+                À Propos de Nous
+              </h2>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="text-container p-6 md:p-8 bg-gray-900/80 rounded-lg backdrop-blur-sm border border-cyan-glow/30 shadow-[0_0_15px_rgba(14,25,225,0.2)]">
+                  <h3 class="text-xl md:text-2xl font-bold text-cyan-glow mb-4">Notre Vision</h3>
+                  <p class="text-white/90 text-base md:text-lg mb-6">
+                    Nous décryptons l'art de la scénographie de concert pour révéler son impact sur l'expérience du spectateur. À travers une approche mêlant esthétique, technique et narration visuelle, nous analysons comment chaque élément – lumière, décor, mise en scène – contribue à l'émotion et à l'immersion du public. Notre objectif : explorer et comprendre les mécanismes qui transforment un simple spectacle en une expérience inoubliable.</p>
+                  <p class="text-white/90 text-base md:text-lg">
+                    Chaque concert est une œuvre vivante où la scénographie devient un langage visuel puissant, captivant le public et intensifiant l'expérience artistique.
+                  </p>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-[0_0_15px_rgba(194,25,25,0.3)] transform transition-transform duration-300 hover:scale-[1.02]">
+                  <img src="img/about-scenography.jpg" alt="L'art de la scénographie" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1470&auto=format&fit=crop'" />
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                    <p class="text-white font-medium text-lg">L'innovation au service de l'art</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-gray-900/60 p-6 rounded-lg border-t-2 border-cyan-glow shadow-[0_0_10px_rgba(14,25,225,0.15)] transition-all duration-300 hover:shadow-[0_0_15px_rgba(14,25,225,0.3)] hover:translate-y-[-5px]">
+                  <div class="text-cyan-glow text-3xl mb-4 flex justify-center"><i class="icon ion-md-bulb"></i></div>
+                  <h4 class="text-xl font-bold text-white mb-3 text-center">Notre approche</h4>
+                  <p class="text-white/80 text-center">Ces vidéos naissent de notre passion pour la musique et l'art visuel. En analysant la scénographie des concerts, nous cherchons à montrer comment chaque élément scénique enrichit l'expérience du public, en explorant l'interconnexion entre visuel et musique, notamment dans les performances américaines</p>
+                </div>
+                
+                <div class="bg-gray-900/60 p-6 rounded-lg border-t-2 border-custom-red shadow-[0_0_10px_rgba(194,25,25,0.15)] transition-all duration-300 hover:shadow-[0_0_15px_rgba(194,25,25,0.3)] hover:translate-y-[-5px]">
+                  <div class="text-custom-red text-3xl mb-4 flex justify-center"><i class="icon ion-md-flash"></i></div>
+                  <h4 class="text-xl font-bold text-white mb-3 text-center">L'univers scénique</h4>
+                  <p class="text-white/80 text-center">Nous voulons partager l'émotion et l'impact visuel d'un concert, en explorant comment chaque détail scénique renforce l'expérience du public</p>
+                </div>
+                
+                <div class="bg-gray-900/60 p-6 rounded-lg border-t-2 border-cyan-glow shadow-[0_0_10px_rgba(14,25,225,0.15)] transition-all duration-300 hover:shadow-[0_0_15px_rgba(14,25,225,0.3)] hover:translate-y-[-5px]">
+                  <div class="text-cyan-glow text-3xl mb-4 flex justify-center"><i class="icon ion-md-people"></i></div>
+                  <h4 class="text-xl font-bold text-white mb-3 text-center">Engagement</h4>
+                  <p class="text-white/80 text-center">Nos vidéos sont le fruit de notre engagement à partager des analyses détaillées de la scénographie des concerts. Nous voulons offrir à notre public des informations précieuses, permettant de mieux comprendre l'impact visuel et émotionnel de chaque performance.</p>
+                </div>
+              </div>
+            
+          </div>
+        
+        <div id="video" class="parallax__group">
+          <!-- Section Vidéo avec Tailwind CSS -->
+          <div class="py-16 px-4 bg-black min-h-screen flex flex-col justify-center relative z-20">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+              <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white text-shadow-glow">
+                Dernière Vidéo
+              </h2>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div
+                  class="rounded-lg overflow-hidden shadow-[0_0_15px_rgba(14,25,225,0.3)] transform transition-transform duration-300 hover:scale-[1.02]"
+                >
+                  <div
+                    class="relative w-full pt-[56.25%] flex items-center justify-center overflow-hidden"
+                  >
+                    <iframe
+                      class="youtube-video youtube-error-shifted absolute inset-0 w-full h-full object-cover"
+                      src="https://www.youtube.com/embed/YnQ9FOewl98?si=XVna1F63n-G7yz0L"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div
+                  class="text-container p-6 bg-gray-900/80 rounded-lg backdrop-blur-sm"
+                >
+                <blockquote
+                    class="text-xl italic font-medium text-white/90 mb-6"
+                  >
+                  La video est sur l'analyse du show de kendrick lors de la mi-temps de la final du superbowl
+                  </blockquote>
+                  <p class="text-white/80 mb-8">
+                    La performance de Kendrick Lamar au Super Bowl n'a pas seulement été un spectacle visuel, mais une véritable déclaration sur l'unité
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="https://www.youtube.com/@USArtsofficial"
+                      target="_blank"
+                      class="inline-block px-6 py-3 bg-cyan-glow border-2 border-cyan-glow text-white hover:bg-cyan-glow hover:text-white transition-all duration-300 rounded-md text-base font-medium btn-glow-blue"
+                      >Rejoignez-nous</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="shorts" class="parallax__group">
+          <!-- Section Shorts avec Tailwind CSS -->
+          <div class="py-16 px-4 bg-black from-gray-900 to-black min-h-screen flex flex-col justify-center relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 text-shadow-glow">
+                  Nos Derniers Shorts
+                </h2>
+                <p class="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
+                  Découvrez nos créations courtes et percutantes, conçues pour
+                  les plateformes sociales modernes.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+                <div
+                  class="group flex flex-col items-center rounded-xl overflow-hidden bg-gray-900/80 shadow-[0_0_15px_rgba(0,0,0,0.5)] transform transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,25,225,0.4)] hover:scale-[1.03]"
+                >
+                  <div
+                    class="relative w-full max-w-[315px] mx-auto pt-[177.78%] flex items-center justify-center overflow-hidden"
+                  >
+                    <iframe
+                      class="youtube-video youtube-error-shifted absolute inset-0 w-full h-full"
+                      src="https://www.youtube.com/embed/QPOLrbKI5oQ"
+                      title="YouTube Shorts player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div
+                    class="w-full p-5 bg-gradient-to-b from-gray-900/90 to-black"
+                  >
+                    <h3
+                      class="text-xl font-semibold text-white group-hover:text-cyan-glow transition-colors duration-300 mb-2"
+                    >
+                      Scénographie Minimaliste
+                    </h3>
+                    <p class="text-white/70 text-sm">
+                      L'art de créer un impact maximal avec un minimum
+                      d'éléments sur scène.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="group flex flex-col items-center rounded-xl overflow-hidden bg-gray-900/80 shadow-[0_0_15px_rgba(0,0,0,0.5)] transform transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,25,225,0.4)] hover:scale-[1.03]"
+                >
+                  <div
+                    class="relative w-full pt-[177.78%] flex items-center justify-center overflow-hidden"
+                  >
+                  <iframe
+                  class="youtube-video youtube-error-shifted absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/QPOLrbKI5oQ"
+                  title="YouTube Shorts player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                  </div>
+                  <div
+                    class="w-full p-5 bg-gradient-to-b from-gray-900/90 to-black"
+                  >
+                    <h3
+                      class="text-xl font-semibold text-white group-hover:text-cyan-glow transition-colors duration-300 mb-2"
+                    >
+                      Effets Spéciaux sur Scène
+                    </h3>
+                    <p class="text-white/70 text-sm">
+                      Technologies innovantes pour créer des expériences
+                      visuelles immersives.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="group flex flex-col items-center rounded-xl overflow-hidden bg-gray-900/80 shadow-[0_0_15px_rgba(0,0,0,0.5)] transform transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,25,225,0.4)] hover:scale-[1.03]"
+                >
+                  <div
+                    class="relative w-full pt-[177.78%] flex items-center justify-center overflow-hidden"
+                  >
+                  <iframe
+                  class="youtube-video youtube-error-shifted absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/QPOLrbKI5oQ"
+                  title="YouTube Shorts player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                  </div>
+                  <div
+                    class="w-full p-5 bg-gradient-to-b from-gray-900/90 to-black"
+                  >
+                    <h3
+                      class="text-xl font-semibold text-white group-hover:text-cyan-glow transition-colors duration-300 mb-2"
+                    >
+                      Couleurs et Éclairages
+                    </h3>
+                    <p class="text-white/70 text-sm">
+                      L'art subtil de l'utilisation des couleurs et de la
+                      lumière pour créer des ambiances uniques.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="https://www.youtube.com/@USArtsofficial"
+                  target="_blank"
+                  class="inline-flex items-center px-6 py-3 bg-custom-red border-2 border-custom-red text-white hover:bg-custom-red hover:text-white transition-all duration-300 rounded-md text-base font-medium btn-glow-red"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    />
+                  </svg>
+                  Voir plus sur YouTube
+                </a>
+              </div>
+
+              <footer class="bg-black/90 backdrop-blur-sm py-8 mt-12">
+                <div class="max-w-7xl mx-auto px-4">
+                  <div class="flex flex-col items-center justify-center mb-8">
+                    <img src="img/USArts_Blanc.png" alt="USArts Logo" class="w-12 h-12 mb-4">
+                    <p class="text-white/50 text-sm">
+                      © 2024 La Scénographie Moderne. Tous droits réservés.
+                    </p>
+                  </div>
+
+                  <!-- Accordéon des mentions légales -->
+                  <div class="max-w-3xl mx-auto">
+                    <button id="mentionsBtn" class="w-full flex items-center justify-center text-white/70 hover:text-cyan-glow transition-colors duration-300 mb-4">
+                      <span class="text-sm">Mentions légales</span>
+                      <svg id="mentionsArrow" class="w-4 h-4 ml-2 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </button>
+
+                    <div id="mentionsContent" class="hidden">
+                      <div class="space-y-6 text-sm text-white/70">
+                        <div>
+                          <h3 class="font-semibold text-white-glow mb-2">Informations légales</h3>
+                          <p>Le site La Scénographie Moderne est édité par USArts, une association à but non lucratif.</p>
+                        </div>
+
+                        <div>
+                          <h3 class="font-semibold text-white-glow mb-2">Hébergement</h3>
+                          <p>Ce site est hébergé par Vercel Inc.<br>
+                          340 S Lemon Ave #4133 Walnut, CA 91789, USA</p>
+                        </div>
+
+                        <div>
+                          <h3 class="font-semibold text-white-glow mb-2">Propriété intellectuelle</h3>
+                          <p>L'ensemble du contenu de ce site est protégé par les lois relatives à la propriété intellectuelle.</p>
+                        </div>
+
+                        <div>
+                          <h3 class="font-semibold text-white-glow mb-2">Protection des données</h3>
+                          <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données.</p>
+                        </div>
+
+                        <div>
+                          <h3 class="font-semibold text-white-glow mb-2">Cookies</h3>
+                          <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+             
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/youtube-fix.js"></script>
+    <script src="./js/navigation.js"></script>
+  </body>
+</html>
